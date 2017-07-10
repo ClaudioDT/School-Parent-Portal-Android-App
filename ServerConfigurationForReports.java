@@ -6,7 +6,7 @@ package com.example.engineer.parent_portal;
 
 public class ServerConfigurationForReports {
 
-    public static final String Data_Url    ="http://192.168.43.183/DemoStudentsPanel/GetReport.php?std_number=";
+    public static final String Data_Url    ="http://Your network ip Address/Databasename/filename.php?field=";
     public static final String key_std_num ="ID";
     public static final String key_name    ="Name";
     public static final String key_surname ="Surname";
