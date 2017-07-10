@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.engineer.parent_portal.SchoolContact">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Physical Address"
+            android:textColor="#fff"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textSize="12pt"
+            android:textStyle="bold" />
+        <TextView
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:text="@string/Address"
+            android:textSize="20dp"
+            android:lines="2"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:textColor="#fff"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textSize="12pt"
+            android:textStyle="bold"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:text="@string/email"
+                android:textSize="20dp"
+                android:layout_weight="1"/>
+            <ImageButton
+                android:id="@+id/text_email_general"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_contact_mail_black_24dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:text="@string/email1"
+                android:textSize="20dp" />
+            <ImageButton
+                android:id="@+id/text_email_finance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_contact_mail_black_24dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:text="@string/email2"
+                android:textSize="20dp"
+                android:paddingTop="@dimen/activity_horizontal_margin"/>
+            <ImageButton
+                android:id="@+id/text_email_academics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_contact_mail_black_24dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Call Us On"
+            android:textColor="#fff"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textSize="12pt"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:text="@string/contact"
+                android:textSize="20dp"/>
+            <ImageButton
+                android:id="@+id/phone_office"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/sym_call_outgoing"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:text="@string/contact1"
+                android:textSize="20dp"/>
+            <ImageButton
+                android:id="@+id/phone_general"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/sym_call_outgoing"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:text="@string/contact2"
+                android:textSize="20dp"/>
+            <ImageButton
+                android:id="@+id/phone_principal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/sym_call_outgoing"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.engineer.parent_portal.SchoolStudents">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/search_student_attendance"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_std_attendance"
+                android:layout_width="match_parent"
+                android:hint="Enter student number"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:id="@+id/buttonGet"
+                android:src="@android:drawable/ic_search_category_default"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/attendance"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_below="@+id/search_student_attendance"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Attendance Results"
+                android:textColor="#fff"
+                android:textAlignment="center"
+                android:textSize="12pt"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/attendance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/attendance_result"
+                android:layout_below="@+id/attendance"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/attendance_view_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12pt"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+                <TextView
+                    android:id="@+id/attendance_view_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12pt"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+                <TextView
+                    android:id="@+id/attendance_view_std_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12pt"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+</ScrollView>

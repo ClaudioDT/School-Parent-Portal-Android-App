@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.engineer.parent_portal.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <Button
+                    android:clickable="true"
+                    android:id="@+id/bt_notification"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/ic_school_notification" />
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notifications"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textAlignment="center"
+                    android:textSize="18sp"/>
+                <Button
+                    android:clickable="true"
+                    android:id="@+id/bt_attendance"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/ic_attendance"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Attendance"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textAlignment="center"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <Button
+                    android:clickable="true"
+                    android:id="@+id/bt_school_report"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/ic_school_black_24dp" />
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="School Report"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textAlignment="center"/>
+                <Button
+                    android:clickable="true"
+                    android:id="@+id/bt_student_infor"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/ic_person_black_24dp"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Student Infor"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textAlignment="center"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/textViewToken"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
